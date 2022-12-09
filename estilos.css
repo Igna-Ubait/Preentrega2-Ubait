@@ -80,6 +80,8 @@ a {
 .diseños {
     font-size: 40px;
     font-family: fantasy;
+
+    transition: transform 1s;
 }
 
 .flex {
@@ -91,6 +93,13 @@ a {
     align-items: center;
     align-content: stretch;
 }
+
+/* .flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+} */
 
 .nosotros {
     font-size: 30px;
@@ -120,9 +129,35 @@ a {
     position: fixed;
     bottom: 50px;
     right: 30px;
+
     transition: size 1s;
 }
 
 .whatsapp:hover {
-    size: 20px;
+    transform: ;
+    size-adjust: 200px;
+}
+
+/* media querie para diversos dispositivos */
+
+
+@media only screen and (max.with:576px) {
+/* estilos generales */
+.encabezado {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuerpo {
+    flex-direction: column;
+}
+
+.flex {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.div {
+    flex-direction: column;
+}
 }
