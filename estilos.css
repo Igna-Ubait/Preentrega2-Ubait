@@ -59,6 +59,7 @@ a {
        font-size: 45px;
        font-family: Georgia, 'Times New Roman', Times, serif;
        font-style: italic;       
+       min-width: 576px;
 }
 
 .cuerpo__contenido-info-descripcion {
@@ -104,13 +105,6 @@ a {
     align-content: stretch;
 }
 
-/* .flex {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-} */
-
 .nosotros {
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -150,10 +144,9 @@ a {
 
 /* media querie para diversos dispositivos */
 
-
-@media only screen and (max.with:576px) {
+@media (max-width: 576px) {
 /* estilos generales */
-.encabezado {
+.encabezado__menu {
     flex-direction: column;
     align-items: center;
 }
@@ -171,3 +164,8 @@ a {
     flex-direction: column;
 }
 }
+.flex-container {
+    flex-direction: column;
+}
+
+
