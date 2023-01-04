@@ -10,11 +10,13 @@
 }
 
 .encabezado__logo {
-  /* font-family: fantasy;
+  /* /* font-family: fantasy;
   font-size: 30px; */
-  position: relative;
-  left: 75px;
-  top: 25px;
+  position: fixed;
+  /* left: 75px;
+  top: 25px; */
+  margin: 30px;
+  margin-bottom: -100px;
   animation: ease-in animacion 1s;
 }
 
@@ -34,7 +36,8 @@
 
 .navegador {
   font-size: 50px;
-  padding: 15px;
+  margin: 20px;
+  padding-top: 30px;
   font-family: cursive;
 
   /* transicion */
@@ -52,14 +55,14 @@ a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-variant: unset;
+  font-variant: unset;
 }
 
 .cuerpo__contenido-info-titulo {
   font-size: 45px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
-  min-width: 576px;
+  margin: 40px;
 }
 
 .cuerpo__contenido-info-descripcion {
@@ -69,7 +72,8 @@ font-variant: unset;
 .diseños {
   font-size: 45px;
   font-family: fantasy;
-  font-style: italic;  
+  font-style: italic; 
+  text-decoration: overline; 
   padding: 20px;
   text-align: center;
   background-image: url(./Recursos/Imagenes/patron-triangulo-abstracto-grieta-poligono-luz-verde-sobre-fondo-gris-oscuro_571381-326.jpg);
@@ -77,23 +81,35 @@ font-variant: unset;
   color: rgb(255, 255, 255);
 }
 
+/* Presentación "nosotros" */
 .nosotros {
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  text-align: center;
+  color: white;
+  margin: 30px;
+  background-color: rgb(0, 0, 0);
+  padding: 40px;
 }
 
-.pasaje {
-  color: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-  font-size: 20px;
+.presentacion {
+  font-size: 40px;
+  padding-bottom: 8px;
+  text-decoration: overline;
+  background-image: url(./Recursos/Imagenes/patron-triangulo-abstracto-grieta-poligono-luz-verde-sobre-fondo-gris-oscuro_571381-326.jpg);
+}
+
+.presentacion__descripcion {
+  font-size: 32px;
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 25px;
 }
 
 /* TARJETA */
 .diseño {
-  background-color: rgb(3, 182, 3);
+  background-color: rgba(6, 192, 6, 0.541);
   border-radius: 10px;
   padding: 20px;
   color: white;
@@ -159,6 +175,16 @@ font-variant: unset;
   background-image: url(./Recursos/Imagenes/patron-triangulo-abstracto-grieta-poligono-luz-verde-sobre-fondo-gris-oscuro_571381-326.jpg);
 }
 
+/* Enlances */
+.pasaje {
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  font-size: 20px;
+}
+
 .fondo {
   background-color: #000;
 }
@@ -188,7 +214,7 @@ font-variant: unset;
   /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 30px;
-  padding: 60px;
+  padding: 80px;
 }
 
 .contacto {
@@ -196,7 +222,9 @@ font-variant: unset;
   color: black;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  font-style: italic;
+  text-decoration: overline;
 }
 
 /* media querie para diversos dispositivos */
