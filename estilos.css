@@ -26,6 +26,7 @@
   font-size: 40px;
   font-weight: bold;
   text-align: center;
+  display: flex;
 }
 
 a {
@@ -225,13 +226,21 @@ a {
 /* media querie para diversos dispositivos */
 
 
-@media only screen (max-width: 576px) {
+@media only screen and (max-width: 576px)  {
   .nav-link {
-    flex-direction: column
+   display: flex;
+   flex-direction: column;
   }
   
+  /* index */
+  .nosotros {
+    flex-direction: column-reverse;
+  }
 
-
+  .diseño__contenido {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
