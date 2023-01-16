@@ -213,8 +213,6 @@ a {
 @media only screen and (max-width: 758px)  {
   /* index */
  .container-fluid {
-  display: flex;
-  flex-direction: column;
   align-items: right;
  }
 
@@ -237,11 +235,18 @@ a {
 }
 
 @media only screen and (max-width: 576px)  {
-   /* index */
   .container-fluid {
    display: flex;
    flex-direction: column;
    align-items: center;
+  }
+
+  /* index */
+  .cuerpo__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
   }
 
   /* presentación */
