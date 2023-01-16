@@ -179,10 +179,6 @@ a {
   transition: size 1s;
 }
 
-.whatsapp:hover {
-  /* size-adjust: 200px; */
-}
-
 /* pie de pagina */
 .pie__pagina {
   background-image: url(./Recursos/Imagenes/patron-triangulo-abstracto-grieta-poligono-luz-verde-sobre-fondo-gris-oscuro_571381-326.jpg);
@@ -217,6 +213,8 @@ a {
 @media only screen and (max-width: 758px)  {
   /* index */
  .container-fluid {
+  display: flex;
+  flex-direction: column;
   align-items: right;
  }
 
