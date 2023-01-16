@@ -26,7 +26,6 @@
   font-size: 40px;
   font-weight: bold;
   text-align: center;
-  display: flex;
 }
 
 a {
@@ -35,14 +34,6 @@ a {
   color: rgb(255, 255, 255);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-variant: unset;
-}
-
-.cuerpo {
-  /* background-image: url(./Recursos/Imagenes/pintura.jfif); */
-  background-size: cover;
-  width: 100%;
-  height: 50%;
-  /* position: absolute; */
 }
 
 .cuerpo__contenido-info-titulo {
@@ -189,7 +180,7 @@ a {
 }
 
 .whatsapp:hover {
-  size-adjust: 200px;
+  /* size-adjust: 200px; */
 }
 
 /* pie de pagina */
@@ -207,7 +198,6 @@ a {
 }
 
 .datos {
-  /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 30px;
   padding: 70px;
@@ -224,20 +214,51 @@ a {
 }
 
 /* media querie para diversos dispositivos */
+@media only screen and (max-width: 758px)  {
+  /* index */
+ .container-fluid {
+  align-items: right;
+ }
 
+ /* presentación */
+ .nosotros {
+   flex-direction: column-reverse;
+ }
 
-@media only screen and (max-width: 576px)  {
-  .nav-link {
+ /* Catálogo productos */
+ .diseño__contenido {
    display: flex;
    flex-direction: column;
+ }
+
+ /* Nuestros datos */
+ .datos {
+   display: flex;
+   flex-direction: column;
+ }
+}
+
+@media only screen and (max-width: 576px)  {
+   /* index */
+  .container-fluid {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
   }
-  
-  /* index */
+
+  /* presentación */
   .nosotros {
     flex-direction: column-reverse;
   }
 
+  /* Catálogo productos */
   .diseño__contenido {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Nuestros datos */
+  .datos {
     display: flex;
     flex-direction: column;
   }
