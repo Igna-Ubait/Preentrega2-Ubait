@@ -37,7 +37,7 @@ a {
 }
 
 .cuerpo__contenido-info-titulo {
-  font-size: 80px;
+  font-size: 75px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   margin: 40px;
@@ -47,7 +47,7 @@ a {
 }
 
 .cuerpo__contenido-info-descripcion {
-  font-size: 45px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -251,7 +251,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   /* presentación */
